@@ -1,0 +1,265 @@
+body {
+    background-image: url("../img/bg.png");
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+#logo {
+    width: 400px;
+    padding-top: 25px;
+    margin-left: 100px;
+    margin-right: -175px;
+}
+
+#title-sub-1 {
+    color: #65A1B0;
+    font-weight: lighter;
+}
+
+#title-sub-2 {
+    color: #502C5C;
+}
+
+#title-sub-3 {
+    color: #7A4274;
+    font-weight: lighter;
+}
+
+#subtitle {
+    color: #63C9EB;
+}
+
+
+.index-item {
+    height: 175px;
+    width: 175px;
+    background-image: url("../img/index_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.index-text {
+    color: white;
+}
+
+.index-text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*#morningBtn:hover, #morningBtn.active {*/
+    /*background-color: #00E3DB;*/
+    /*color: white;*/
+/*}*/
+
+.btn-schedule {
+    font-weight: bold;
+    color: #A0A2A1;
+    border-color: #A0A2A1;
+    width: 150px;
+}
+
+.btn-schedule:hover {
+     background-color: lightgray;
+     color: white;
+     border-color: lightgray;
+ }
+
+.btn-schedule-active {
+    font-weight: bold;
+    background-color: #00E3DB;
+    color: white;
+    border-color: #00E3DB;
+    width: 150px;
+}
+
+.btn-schedule-active:hover {
+    background-color: #00E3DB;
+    border-color: #00E3DB;
+}
+
+/*#afternoonBtn:hover, #afternoonBtn.active {*/
+    /*background-color: #A0A2A1;*/
+    /*color: white;*/
+/*}*/
+
+#dateDay {
+    font-size: 100px;
+    color: #FFB44A
+}
+
+#dateMonth {
+    color: #5E7EE6;
+}
+
+#hotel {
+    color: #B995C6;
+    margin-top: -15px;
+}
+
+#room {
+    color: #5E7EE6;
+    font-weight: 600;
+    margin-top: -5px;
+    letter-spacing: 5.4px;
+}
+
+.special-header {
+    background-color: transparent;
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+#charlas-title, #challenge-title {
+    color: #8F1D8A;
+    font-weight: 700;
+}
+
+.talk-time {
+    color: #8F1D8A;
+    font-weight: 600;
+}
+
+.talk-title {
+    color: #5E7EE6;
+    font-weight: lighter;
+}
+
+.challenge-img {
+    max-width: 75%;
+    height: auto;
+}
+
+.btn-special {
+    border: none;
+    width: 100px;
+}
+
+.btn-special:hover {
+    background-color: transparent;
+}
+
+.btn-num {
+    border-bottom: 5px solid lightgray;
+    color: lightgray;
+}
+
+.btn-text {
+    color: lightgray;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.btn-active .btn-num {
+    border-bottom: 5px solid #7C28C7;
+    color: #00E3DB;
+}
+
+.btn-active .btn-text {
+    color: #7C28C7;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+#speed-title {
+    font-weight: 700;
+}
+
+#speed-word {
+    letter-spacing: 38px;
+}
+
+.btn.active.focus, .btn.active:focus,
+.btn.focus, .btn:active.focus,
+.btn:active:focus, .btn:focus {
+    box-shadow: none;
+}
+
+
+
+
+/* CAROUSEL */
+#carousel {
+    /*position: relative;*/
+    height: 400px;
+    overflow: hidden;
+}
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+#carousel div img {
+    width: 400px;
+    transition: width 1s;
+}
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+    width: 200px;
+}
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+    width: 200px;
+}
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+    width: 300px;
+}
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+    width: 300px;
+}
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+    width: 200px;
+}

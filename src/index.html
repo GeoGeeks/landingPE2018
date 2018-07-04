@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Planeta Esri</title>
+</head>
+<body>
+
+
+
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="jumbotron d-flex justify-content-center mb-0 pb-4">
+        
+        <!-- Logo -->
+        <div class="mt-5">
+            <img src="img/smartphone.png" alt="smartphone-logo" id="logo">
+        </div>
+        
+        <!-- Title -->
+        <div>
+            <div class="mt-5">
+                <h2 id="title-sub-1" class="text-right pr-5 mb-0">UN ESPACIO DEDICADO</h2>
+                <h2 id="title-sub-2" class="text-right mb-0">A LA INNOVACIÓN</h2>
+                <h1 id="title-sub-3" class="text-right mr-3 pr-5">GEOGRÁFICA</h1>
+            </div>
+            <div class="text-center">
+                <p id="subtitle">Martes 19 de septiembre <br> Hotel Grand Hyatt</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- INDICE -->
+    <div id="index" class="row text-center center-block mb-5">
+        <div class="col-md-3 offset-md-3">
+            <div class="index-item d-flex flex-column justify-content-center mx-auto">
+                <h5 class="mb-0"><a class="index-text" href="#charlas">CHARLAS</a></h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="index-item d-flex flex-column justify-content-center mx-auto">
+                <h5 class="mb-0"><a class="index-text" href="#challenge">CHALLENGE</a></h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="index-item d-flex flex-column justify-content-center mx-auto">
+                <h5 class="mb-0"><a class="index-text" href="#speedgeo">SPEED <br> GEOGEEKING</a></h5>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CHARLAS -->
+    <div id="charlas" class="mt-4 pt-5">
+        <div class="text-center mb-5"><h1 id="charlas-title" class="display-4">CHARLAS</h1></div>
+        <div class="row">
+
+            <!-- Horario -->
+            <div class="col-md-4">
+                <div class="container text-center">
+
+                    <div class="text-center mb-4">
+                        <h3 class="mb-0"><span id="dateDay">18</span><span id="dateMonth"> SEPT.</span></h3>
+                        <div id="hotel"><span>HOTEL GRAND HYATT</span></div>
+                        <div id="room"><span>SALÓN VALLE</span></div>
+                    </div>
+
+                    <div>
+                        <div class="d-flex flex-column">
+                            <button type="button" id="morningBtn" class="btn btn-lg btn-schedule btn-outline-dark btn-schedule-active mb-1 mx-auto" ><i class="fas fa-minus"></i> Mañana</button>
+                            <button type="button" id="afternoonBtn" class="btn btn-lg btn-schedule btn-outline-dark mt-1 mx-auto"><i class="fas fa-plus"></i> Tarde</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contenido Agenda -->
+            <div class="col-md-8">
+                <div id="accordion">
+
+                    <!-- Item 1 -->
+                    <div class="card">
+                        <div class="card-header special-header">
+                            <h5 class="mb-0">
+                                <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                                    <span class="talk-time pr-5">8:30 am</span><span class="talk-title">Bienvenida</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse1" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4 p-4">
+                                    <img class="img-thumbnail img-fluid d-block" src="img/img4.jpg">
+                                </div>
+                                <div class="col-lg-8 card-body">
+                                    <h6 class="card-subtitle text-muted mb-3">9:30 - 10:00</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</p>
+                                    <button type="button" class="btn btn-xs btn-outline-danger mr-3" data-toggle="modal" data-target="#videoModal1"><i class="fas fa-play"></i></button>
+                                    <div class="modal fade" id="videoModal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Python API</h5>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="embed-responsive embed-responsive-4by3">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ylJhKs4hc64" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="card">
+                        <div class="card-header special-header">
+                            <h5 class="mb-0">
+                                <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                                    <span class="talk-time pr-5">9:00 am</span><span class="talk-title">Diseño Cartográfico</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse2" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4 p-4">
+                                    <img class="img-thumbnail img-fluid d-block" src="img/img4.jpg">
+                                </div>
+                                <div class="col-lg-8 card-body">
+                                    <h6 class="card-subtitle text-muted mb-3">9:30 - 10:00</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</p>
+                                    <button type="button" class="btn btn-xs btn-outline-danger mr-3" data-toggle="modal" data-target="#videoModal1"><i class="fas fa-play"></i></button>
+                                    <div class="modal fade" id="videoModal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Python API</h5>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="embed-responsive embed-responsive-4by3">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ylJhKs4hc64" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="card">
+                        <div class="card-header special-header">
+                            <h5 class="mb-0">
+                                <a href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+                                    <span class="talk-time pr-5">9:30 am</span><span class="talk-title">BIM</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse3" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4 p-4">
+                                    <img class="img-thumbnail img-fluid d-block" src="img/img4.jpg">
+                                </div>
+                                <div class="col-lg-8 card-body">
+                                    <h6 class="card-subtitle text-muted mb-3">9:30 - 10:00</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</p>
+                                    <button type="button" class="btn btn-xs btn-outline-danger mr-3" data-toggle="modal" data-target="#videoModal1"><i class="fas fa-play"></i></button>
+                                    <div class="modal fade" id="videoModal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Python API</h5>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="embed-responsive embed-responsive-4by3">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ylJhKs4hc64" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="card">
+                        <div class="card-header special-header">
+                            <h5 class="mb-0">
+                                <a href="#collapse4" data-parent="#accordion" data-toggle="collapse">
+                                    <span class="talk-time pr-5">10:00 am</span><span class="talk-title">Python</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse4" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4 p-4">
+                                    <img class="img-thumbnail img-fluid d-block" src="img/img4.jpg">
+                                </div>
+                                <div class="col-lg-8 card-body">
+                                    <h6 class="card-subtitle text-muted mb-3">9:30 - 10:00</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</p>
+                                    <button type="button" class="btn btn-xs btn-outline-danger mr-3" data-toggle="modal" data-target="#videoModal1"><i class="fas fa-play"></i></button>
+                                    <div class="modal fade" id="videoModal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Python API</h5>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="embed-responsive embed-responsive-4by3">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ylJhKs4hc64" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5-->
+                    <div class="card">
+                        <div class="card-header special-header">
+                            <h5 class="mb-0">
+                                <a href="#collapse5" data-parent="#accordion" data-toggle="collapse">
+                                    <span class="talk-time pr-5">10:30 am</span><span class="talk-title">Realidad Aumentada</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse5" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4 p-4">
+                                    <img class="img-thumbnail img-fluid d-block" src="img/img4.jpg">
+                                </div>
+                                <div class="col-lg-8 card-body">
+                                    <h6 class="card-subtitle text-muted mb-3">9:30 - 10:00</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</p>
+                                    <button type="button" class="btn btn-xs btn-outline-danger mr-3" data-toggle="modal" data-target="#videoModal1"><i class="fas fa-play"></i></button>
+                                    <div class="modal fade" id="videoModal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Python API</h5>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="embed-responsive embed-responsive-4by3">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ylJhKs4hc64" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6-->
+                    <div class="card">
+                        <div class="card-header special-header">
+                            <h5 class="mb-0">
+                                <a href="#collapse6" data-parent="#accordion" data-toggle="collapse">
+                                    <span class="talk-time pr-5">11:00 am</span><span class="talk-title">JavaScript</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse6" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4 p-4">
+                                    <img class="img-thumbnail img-fluid d-block" src="img/img4.jpg">
+                                </div>
+                                <div class="col-lg-8 card-body">
+                                    <h6 class="card-subtitle text-muted mb-3">9:30 - 10:00</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</p>
+                                    <button type="button" class="btn btn-xs btn-outline-danger mr-3" data-toggle="modal" data-target="#videoModal1"><i class="fas fa-play"></i></button>
+                                    <div class="modal fade" id="videoModal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Python API</h5>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="embed-responsive embed-responsive-4by3">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ylJhKs4hc64" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7-->
+                    <div class="card">
+                        <div class="card-header special-header">
+                            <h5 class="mb-0">
+                                <a href="#collapse7" data-parent="#accordion" data-toggle="collapse">
+                                    <span class="talk-time pr-5">11:30 am</span><span class="talk-title">Geoprocesos</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse7" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4 p-4">
+                                    <img class="img-thumbnail img-fluid d-block" src="img/img4.jpg">
+                                </div>
+                                <div class="col-lg-8 card-body">
+                                    <h6 class="card-subtitle text-muted mb-3">9:30 - 10:00</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</p>
+                                    <button type="button" class="btn btn-xs btn-outline-danger mr-3" data-toggle="modal" data-target="#videoModal1"><i class="fas fa-play"></i></button>
+                                    <div class="modal fade" id="videoModal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Python API</h5>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="embed-responsive embed-responsive-4by3">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ylJhKs4hc64" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8-->
+                    <div class="card">
+                        <div class="card-header special-header">
+                            <h5 class="mb-0">
+                                <a href="#collapse8" data-parent="#accordion" data-toggle="collapse">
+                                    <span class="talk-time pr-5">12:00 pm</span><span class="talk-title">Insights</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse8" class="collapse">
+                            <div class="row">
+                                <div class="col-lg-4 p-4">
+                                    <img class="img-thumbnail img-fluid d-block" src="img/img4.jpg">
+                                </div>
+                                <div class="col-lg-8 card-body">
+                                    <h6 class="card-subtitle text-muted mb-3">9:30 - 10:00</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</p>
+                                    <button type="button" class="btn btn-xs btn-outline-danger mr-3" data-toggle="modal" data-target="#videoModal1"><i class="fas fa-play"></i></button>
+                                    <div class="modal fade" id="videoModal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Python API</h5>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="embed-responsive embed-responsive-4by3">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ylJhKs4hc64" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CHALLENGE -->
+    <div id="challenge" class="mt-4">
+        <div class="row">
+
+            <!-- Carrusel 1 -->
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="text-center mb-5"><h1 class="display-4" id="challenge-title">CHALLENGE</h1></div>
+                <div id="text-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- ¿Qué es? -->
+                        <div class="carousel-item active">
+                            <div class="carousel-content">
+                                <div>
+                                    <h3>¿Qué es?</h3>
+                                    <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Descripción de los retos -->
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <div>
+                                    <h3>Descripción de los retos</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lista de reproducción -->
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <div>
+                                    <h3>Lista de reproducción</h3>
+                                    <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn btn-outline-dark btn-special btn-active" type="button" data-target="#text-carousel" data-slide-to="0">
+                        <h3 class="btn-num mb-0">1</h3>
+                        <span class="btn-text">PASO</span>
+                    </button>
+                    <button class="btn btn-outline-dark btn-special" type="button" data-target="#text-carousel" data-slide-to="1">
+                        <h3 class="btn-num mb-0">2</h3>
+                        <span class="btn-text">PASO</span>
+                    </button>
+                    <button class="btn btn-outline-dark btn-special" type="button" data-target="#registerModal" data-toggle="modal">
+                        <h3 class="btn-num mb-0">3</h3>
+                        <span class="btn-text">PASO</span>
+                    </button>
+                    <button class="btn btn-outline-dark btn-special" type="button" data-target="#text-carousel" data-slide-to="2">
+                        <h3 class="btn-num mb-0">4</h3>
+                        <span class="btn-text">PASO</span>
+                    </button>
+                </div>
+
+                <div class="modal fade" id="registerModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Registro</h5>
+                                <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="username">Nombre del grupo</label>
+                                        <input id="username" type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group mb-4 mailGroup">
+                                        <label for="mail">Correos</label>
+
+                                        <div class="form-row mb-3">
+                                            <div class="col">
+                                                <input id="mail" type="email" class="form-control">
+                                            </div>
+                                            <div class="col">
+                                                <button class="btn btn-outline-success addMail" type="button"><i class="fas fa-plus"></i></button>
+                                            </div>
+                                        </div>
+
+                                        <!--<div class="form-row">-->
+                                        <!--<div class="col">-->
+                                        <!--<input type="email" class="form-control">-->
+                                        <!--</div>-->
+                                        <!--<div class="col">-->
+                                        <!--<button class="btn btn-outline-danger ml-4" type="button"><i class="fas fa-times"></i></button>-->
+                                        <!--</div>-->
+                                        <!--</div>-->
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="selectChallenge">Seleccionar un reto</label>
+                                        <select id="selectChallenge" type="" class="form-control">
+                                            <option value="">Reto 1</option>
+                                            <option value="">Reto 2</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <p><small>Al registrarse acepta los términos y condiciones.</small></p>
+                                <button class="btn btn-dark" data-dismiss="modal">Registrarse</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Imagen -->
+            <div class="col-md-6">
+                <img class="challenge-img" src="img/challenge1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <!-- SPEED GEOGEEKING -->
+    <div id="speedgeo" class="mt-4">
+        <h1 id="speed-title" class="text-white text-center display-4 mb-5"><span id="speed-word" class="pl-5">SPEED</span> <br> GEOGEEKING</h1>
+
+        <!-- Carousel -->
+        <div class="my-5">
+            <div id="carousel">
+                <div class="hideLeft">
+                    <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+                </div>
+
+                <div class="prevLeftSecond">
+                    <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+                </div>
+
+                <div class="prev">
+                    <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+                </div>
+
+                <div class="selected">
+                    <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+                </div>
+
+                <div class="next">
+                    <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+                </div>
+
+                <div class="nextRightSecond">
+                    <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+                </div>
+
+                <div class="hideRight">
+                    <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="d-flex flex-row-reverse m-5">
+        <span><button class="btn btn-outline-warning rounded-circle" data-toggle="modal" data-target="#contactModal"><i class="fab fa-mailchimp display-2"></i></button></span>
+    </div>
+    <div class="modal" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contáctanos</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input class="form-control" id="name" type="text">
+                        </div><div class="form-group">
+                        <label for="email">Correo</label>
+                        <input class="form-control" id="email" type="email">
+                    </div><div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Enviar mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- FOOTER -->
+<div class="footer bg-dark">
+    <div class="container text-light text-center p-4">
+        Powered By: <a class="text-muted" target="_blank" href="http://desarrolladores.esri.co/">GeoGeeks</a>
+        <span class="ml-2">
+            <a class="text-secondary" target="_blank" href="https://github.com/GeoGeeks"><i class="fab fa-github"></i></a>
+            <a class="text-secondary" target="_blank" href="https://www.facebook.com/geogeeksco/"><i class="fab fa-facebook-square"></i></a>
+            <a class="text-secondary" target="_blank" href="https://twitter.com/geo_geeks"><i class="fab fa-twitter-square"></i></a>
+            <a class="text-secondary" target="_blank" href="https://www.youtube.com/channel/UCuGsuNbUykWZ6lsb85PeW0A"><i class="fab fa-youtube"></i></a>
+        </span>
+    </div>
+</div>
+
+
+
+<!-- CDN's -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
