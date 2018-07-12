@@ -1,6 +1,12 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-image: url("../img/bg.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
 }
 
 .jumbotron {
@@ -137,7 +143,7 @@ body {
 }
 
 .challenge-img {
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
 }
 

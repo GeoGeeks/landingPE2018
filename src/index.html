@@ -39,20 +39,20 @@
 
 
     <!-- INDICE -->
-    <div id="index" class="row text-center center-block mb-5">
-        <div class="col-md-3 offset-md-3">
+    <div id="index" class="row text-center mb-5">
+        <div class="col-4">
             <div class="index-item d-flex flex-column justify-content-center mx-auto">
                 <h5 class="mb-0"><a class="index-text" href="#charlas">CHARLAS</a></h5>
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-4">
             <div class="index-item d-flex flex-column justify-content-center mx-auto">
                 <h5 class="mb-0"><a class="index-text" href="#challenge">CHALLENGE</a></h5>
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-4">
             <div class="index-item d-flex flex-column justify-content-center mx-auto">
                 <h5 class="mb-0"><a class="index-text" href="#speedgeo">SPEED <br> GEOGEEKING</a></h5>
             </div>
@@ -408,13 +408,13 @@
 
 
     <!-- CHALLENGE -->
-    <div id="challenge" class="mt-4">
-        <div class="row">
+    <div id="challenge" class="mt-5 pt-5">
+        <div class="row mt-5 pt-5">
 
-            <!-- Carrusel 1 -->
+            <!-- Carousel 1 -->
             <div class="col-md-6 d-flex flex-column justify-content-center">
                 <div class="text-center mb-5"><h1 class="display-4" id="challenge-title">CHALLENGE</h1></div>
-                <div id="text-carousel" class="carousel slide" data-ride="carousel">
+                <div id="text-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner">
                         <!-- ¿Qué es? -->
                         <div class="carousel-item active">
@@ -432,6 +432,17 @@
                                 <div>
                                     <h3>Descripción de los retos</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Inscripcion -->
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <div>
+                                    <h3>Inscripción</h3>
+                                    <p>Filet mignon cupim beef ribs tenderloin ham. Prosciutto meatloaf andouille short ribs. Filet mignon buffalo jowl pork belly. Jowl turkey cupim, kielbasa swine sirloin short ribs porchetta biltong ball tip pork belly meatball.
+                                        <a href="" data-target="#registerModal" data-toggle="modal">Inscribirse</a> </p>
                                 </div>
                             </div>
                         </div>
@@ -457,11 +468,11 @@
                         <h3 class="btn-num mb-0">2</h3>
                         <span class="btn-text">PASO</span>
                     </button>
-                    <button class="btn btn-outline-dark btn-special" type="button" data-target="#registerModal" data-toggle="modal">
+                    <button class="btn btn-outline-dark btn-special" type="button" data-target="#text-carousel" data-slide-to="2">
                         <h3 class="btn-num mb-0">3</h3>
                         <span class="btn-text">PASO</span>
                     </button>
-                    <button class="btn btn-outline-dark btn-special" type="button" data-target="#text-carousel" data-slide-to="2">
+                    <button class="btn btn-outline-dark btn-special" type="button" data-target="#text-carousel" data-slide-to="3">
                         <h3 class="btn-num mb-0">4</h3>
                         <span class="btn-text">PASO</span>
                     </button>
@@ -528,14 +539,9 @@
         </div>
     </div>
 
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
 
     <!-- SPEED GEOGEEKING -->
-    <div id="speedgeo" class="mt-4">
+    <div id="speedgeo" class="mt-4 pt-5">
         <h1 id="speed-title" class="text-white text-center display-4 mb-5"><span id="speed-word" class="pl-5">SPEED</span> <br> GEOGEEKING</h1>
 
         <!-- Carousel -->
@@ -573,37 +579,37 @@
     </div>
 
 
-    <!-- CONTACT -->
-    <div class="d-flex flex-row-reverse m-5">
-        <span><button class="btn btn-outline-warning rounded-circle" data-toggle="modal" data-target="#contactModal"><i class="fab fa-mailchimp display-2"></i></button></span>
-    </div>
-    <div class="modal" id="contactModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Contáctanos</h5>
-                    <button class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input class="form-control" id="name" type="text">
-                        </div><div class="form-group">
-                        <label for="email">Correo</label>
-                        <input class="form-control" id="email" type="email">
-                    </div><div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
-                    </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal">Enviar mensaje</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--&lt;!&ndash; CONTACT &ndash;&gt;-->
+    <!--<div class="d-flex flex-row-reverse m-5">-->
+        <!--<span><button class="btn btn-outline-warning rounded-circle" data-toggle="modal" data-target="#contactModal"><i class="fab fa-mailchimp display-2"></i></button></span>-->
+    <!--</div>-->
+    <!--<div class="modal" id="contactModal">-->
+        <!--<div class="modal-dialog">-->
+            <!--<div class="modal-content">-->
+                <!--<div class="modal-header">-->
+                    <!--<h5 class="modal-title">Contáctanos</h5>-->
+                    <!--<button class="close" data-dismiss="modal">&times;</button>-->
+                <!--</div>-->
+                <!--<div class="modal-body">-->
+                    <!--<form action="">-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="name">Nombre</label>-->
+                            <!--<input class="form-control" id="name" type="text">-->
+                        <!--</div><div class="form-group">-->
+                        <!--<label for="email">Correo</label>-->
+                        <!--<input class="form-control" id="email" type="email">-->
+                    <!--</div><div class="form-group">-->
+                        <!--<label for="message">Mensaje</label>-->
+                        <!--<textarea class="form-control" id="message" rows="3"></textarea>-->
+                    <!--</div>-->
+                    <!--</form>-->
+                <!--</div>-->
+                <!--<div class="modal-footer">-->
+                    <!--<button class="btn btn-secondary" data-dismiss="modal">Enviar mensaje</button>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
 </div>
 
